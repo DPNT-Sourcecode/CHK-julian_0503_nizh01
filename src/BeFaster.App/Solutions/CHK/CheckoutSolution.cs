@@ -99,7 +99,6 @@ namespace BeFaster.App.Solutions.CHK
             int i = 0;
             int multibuyCount = 0;
 
-            System.Console.WriteLine("before loop");
             while (i == 0)
             {
                 if (S_count > 1)
@@ -146,6 +145,7 @@ namespace BeFaster.App.Solutions.CHK
         }
     }
 }
+
 
 
 
