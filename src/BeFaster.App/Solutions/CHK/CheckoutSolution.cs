@@ -8,7 +8,7 @@ namespace BeFaster.App.Solutions.CHK
     {
         public static int ComputePrice(string skus)
         {
-            System.Console.WriteLine("x");
+            System.Console.WriteLine("entry");
             int checkoutAmount = 0;
             if (string.IsNullOrEmpty(skus))
             {
@@ -98,6 +98,8 @@ namespace BeFaster.App.Solutions.CHK
             checkoutAmount = checkoutAmount + (W_count * 20);
             int i = 0;
             int multibuyCount = 0;
+
+            System.Console.WriteLine("before loop");
             while (i == 0)
             {
                 if (S_count > 1)
@@ -133,14 +135,17 @@ namespace BeFaster.App.Solutions.CHK
                 //    checkoutAmount = checkoutAmount + 45;
                 //}
             }
+            System.Console.WriteLine("after loop");
             checkoutAmount = checkoutAmount + (S_count * 20);
             checkoutAmount = checkoutAmount + (T_count * 20);
             checkoutAmount = checkoutAmount + (X_count * 17);
             checkoutAmount = checkoutAmount + (Y_count * 20);
             checkoutAmount = checkoutAmount + (Z_count * 21);
+            System.Console.WriteLine("exit");
             return checkoutAmount;
         }
     }
 }
+
 
 
