@@ -8,6 +8,7 @@ namespace BeFaster.App.Solutions.CHK
     {
         public static int ComputePrice(string skus)
         {
+            System.Console.WriteLine("This is C#");
             int checkoutAmount = 0;
             if (string.IsNullOrEmpty(skus))
             {
@@ -104,4 +105,5 @@ namespace BeFaster.App.Solutions.CHK
         }
     }
 }
+
 
